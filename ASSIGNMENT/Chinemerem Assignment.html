@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/ASSIGNMENT/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE</title>
+    <style>
+      img {
+        width: 200px;
+        height: 220px;
+        display: block;
+        margin: auto;
+        align-items: center;
+      }
+      .box {
+        background-color: rgb(231, 247, 194);
+        padding: 20px;
+        margin-bottom: 30px;
+        width: 30%;
+        display: inline-block;
+      }
+      p {
+        font-size: 15pt;
+        text-align: justify;
+        line-height: 1.0;
+      }
+      h3{
+        font-weight: bold;
+        font-style: italic;
+        color: blueviolet;
+        font-size: 20px;   
+      }
+      h1{
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-style: italic;
+        background-color: #f5dec0;
+        margin: 10px 20px;
+        text-align: center;
+      }
+      body{
+        background-color: rgb(247, 225, 196);
+      }
+      span{
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black
+      }
+      em{
+        color: blueviolet;
+      }
+      #AboutMe{
+        text-align: center;
+        font-size: 1em;
+      }
+      header{
+        font-size: 25px;
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      #Copyright{
+        font-size: 10px;
+      }
+      #BakingandCooking{
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-1">
+      <h1><em>Hello</em> <br>
+       <span>I'm Ebere</span></h1> <br>
+       <img src="./Chinemerem Assignment_files/Snapchat-1477045041.jpg" alt="">
+        <p id="AboutMe">I am a Biomedical Engineer by profession. I own an online store called
+        Lights and Props where i sell all type of content creating tools, props
+        etc.
+      </p>
+    </div><br>
+    <br>
+    <header>MY SKILLS</header>
+    <div class="box">
+      <h3>Baking and Cooking</h3>
+      <p id="BakingandCooking">
+        Baking is my own way of distressing. Creating and trying out new recipes
+        is my own way of creasting and spreading love ❤
+        <em love="" it=""></em>.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Web Developer</h3>
+      <p id="WebDeveloper">
+        I am a beginner web developer, i started out with front-end web
+        development, hoping to acquire more knowledege and advance into back-end
+        development. It's a little rusty when entering javascript, but with
+        time, everything settles in. </p>
+    </div>
+    <div>
+      <header>Get in Touch</header>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/ASSIGNMENT/index.html">Linkedin</a></li>
+        <li><a href="http://127.0.0.1:5500/ASSIGNMENT/index.html">Twitter</a></li>
+        <li><a href="http://127.0.0.1:5500/ASSIGNMENT/index.html">Website</a></li>
+      </ul>
+      <br>
+
+
+      <br>
+    </div>
+    <div class="center-text">
+      <p id="Copyright">Copyright Bluetick 2023</p>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
